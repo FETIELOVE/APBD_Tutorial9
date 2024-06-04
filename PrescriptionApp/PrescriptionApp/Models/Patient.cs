@@ -9,9 +9,9 @@ public class Patient
     [MaxLength(100)] [Required] public string? LastName { get; set; }
     [Required] public DateTime DateOfBirth { get; set; }
 
-    public ICollection<Prescription> Prescriptions { get; set; } = new List<Prescription>();
+    public ICollection<Prescription> Prescriptions { get; set; } 
 
-    // Initialize the Prescriptions collection
+   
 }
 
 

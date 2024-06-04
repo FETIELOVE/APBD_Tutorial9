@@ -13,8 +13,7 @@ public class Medicament
     public string Type { get; set; } = string.Empty;
 
     public ICollection<PrescriptionMedicament> PrescriptionMedicaments { get; set; }
-        = new List<PrescriptionMedicament>();
-
+       
 
 
 }

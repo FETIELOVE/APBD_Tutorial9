@@ -14,7 +14,7 @@ public class PrescriptionRepository : IPrescriptionRepository
         _context = context;
     }
 
-    public async Task<Medicament> GetMedicamentByIdAsync(int idMedicament)
+   public async Task<Medicament> GetMedicamentByIdAsync(int idMedicament)
     {
         var medicament = await _context.Medicaments.FindAsync(idMedicament);
         if (medicament == null)
